@@ -1,0 +1,216 @@
+
+@import "_extends"
+@import "_vars"
+
+
+$dpurple:   #512DA8
+$lpurble:   #673AB7
+$lgray:     #E0DEDE
+$white:     #FFFFFF
+$red:       #FF5252
+$black:     #212121
+$gray:      #757575
+
+
+
+html, body
+	@extend %reset
+	height: 100%
+	font-size: 16px
+
+h1, h2, h3, h4, h5, p, span, ul, li, a
+	@extend %reset
+
+ul
+	@extend %list-reset
+
+a 
+	text-decoration: none
+	color: $red
+
+
+.content
+	display: flex
+	flex-direction: column
+
+	
+
+.header
+	@extend %reset
+	background-image: url(../images/large.png)
+	background-color: $dpurple
+	height: 100vh
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	align-items: center
+	padding: 5vh 15vw
+	text-align: center
+
+	&__title
+		font-family: $sans
+		font-size: 2.5em
+		color: $white
+		margin-bottom: 4vh
+
+	&__avatar
+		width: 250px
+		border: 5px solid $lgray
+		border-radius: 50%
+		margin-bottom: 4vh
+
+	&__imgscroll
+		width: 40px
+
+
+
+.menu
+	&__list
+
+	&__item
+		margin-bottom: 15px
+
+	&__link
+		font-family: $sans
+		color: $white
+		padding: 4px 6px
+
+		&:hover
+			border-radius: 5px
+			border-bottom: 3px solid  $white
+
+
+
+.social
+	margin-bottom: 15px
+	display: flex
+
+	&__item
+		background: $red
+		border-bottom: 4px solid #c93e3e
+		margin: 0 10px
+		border-radius: 4px
+		padding: 4px 12px
+		cursor: pointer
+
+	&__link
+		font-family: $sans
+		color: $white
+
+		&:hover
+			.social__item
+				background: #c93e3e
+
+
+
+.main
+	@extend %reset
+
+
+
+
+.section
+	min-height: 100vh
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: flex-start
+	padding: 0 15vw
+
+	&__title
+		margin-bottom: 5vh
+		color: $white
+		font-family: $sans
+		font-size: 2em	
+
+	&__subtitle
+		margin-bottom: 5vh
+		color: $white
+		font-family: $sans
+		font-size: 1.6em
+
+	&__paragraph
+		color: $white
+		font-family: $sans
+		font-size: 1.2em
+		line-height: 1.6em
+		text-align: justify
+		text-justify: inter-word
+		margin-bottom: 8vh 
+	
+	&__text
+		color: $white
+		font-family: $sans
+		font-size: 1em
+		line-height: 1.4em
+
+
+	&__wrapper
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-bottom: 10vh
+
+	&__image
+		height: 128px
+		margin-right: 20px
+			
+
+
+	&:nth-child(even)
+		background: $dpurple
+	
+
+	&:nth-child(odd)
+		background: $black	
+
+
+
+//singularidades
+#one
+	align-items: flex-start
+
+#two
+	align-items: center
+
+#three
+	align-items: flex-start
+	.section__title
+		margin-top: 10vh
+
+
+
+
+.footer
+	background: $dpurple
+	padding: 20px
+	display: flex
+	justify-content: space-around
+	align-items: center
+
+	&__text, 
+	&__title, 
+	&__email
+		font-family: $sans
+		color: $white
+
+	&__title
+		font-size: 1.3em
+		margin-bottom: 10px 
+
+	&__email
+		font-size: 1.1em
+		margin-bottom: 5px
+
+	@media screen and (min-width: 480px)
+		flex-direction: column
+		text-align: center
+
+		&__text
+			order: 2
+
+		&__contact
+			order: 1
+			margin-bottom: 45px
+
+

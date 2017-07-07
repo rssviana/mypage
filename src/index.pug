@@ -1,0 +1,71 @@
+doctype html
+html(lang='pt-br')
+  head
+    meta(charset="UTF-8")
+    title Rssviana
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='assets/css/style.css')
+  body
+    .content
+      header.content__header.header
+        h1.header__title Ronan Sacramento de Souza Viana
+        img.header__avatar(src="assets/images/avt.jpg", alt="avatar")
+        nav.menu
+          ul.menu__list
+            li.menu__item
+              a.menu__link(href="#one") Apresentação
+            li.menu__item
+              a.menu__link(href="#two") Formação
+            li.menu__item
+              a.menu__link(href="#three") Extras
+
+        ul.header__social.social
+          li.social__item.social__item--facebook
+            a.social__link(href="https://www.facebook.com/ronan.viana.1", target="_blank") Facebook
+          li.social__item.social__item--linkedin
+            a.social__link(href="https://www.linkedin.com/in/ronan-viana-955255114/", target="_blank") Linkedin
+          li.social__item.social__item--github
+            a.social__link(href="https://github.com/rssviana", target="_blank") Github
+          li.social__item.social__item--instagram
+            a.social__link(href="https://www.instagram.com/ronan_viana/", target="_blank") Instagram
+
+        a.header__click(href="#one")
+          img.header__imgscroll(src="assets/images/scroll-down.png", alt="down")
+        
+
+      .content__main.main
+        section.content__section.section#one
+          h2.section__title Apresentação
+          p.section__paragraph Meu nome Ronan, tenho 22 anos, Carioca que ama games, programar, filmes, programar, series, musicas e programar rsrsrs. Deixando a brincadeira de lado, programar me fascina.  A sensação de ser útil, de solucionar um problema , de criar, desenvolver  e de estar diante de um desafio muitas vezes complexo mas que no final com muito esforço resolve-lo me motiva e me da energia para me seguir em frente.
+
+          h3.section__subtitle Objetivos
+          p.section__paragraph Atuar na area de Front End  desenvolvendo conteúdos atuais, bonitos, responsivos, respeitando a visão do cliente sobre o produto.
+
+        section.content__section.section#two
+          h2.section__title Formação 
+          div.section__wrapper  
+            img.section__image(src="assets/images/icon-university.png", alt="") 
+            p.section__text Nome: #[a(href="http://www.unisuam.edu.br/", target="_blank") Unisuam] - Centro Universitário Augusto Motta #[br] Curso: Bacharel em Ciência da Computação #[br] Duração : Início: 2° sementre de 2014, previsão para término : 2° semestre 2018
+
+          div.section__wrapper
+            img.section__image(src="assets/images/icon-university.png", alt="") 
+            p.section__text Nome: #[a(href="http://www.unisuam.edu.br/", target="_blank") GAU] - Sistema GAU de Ensino #[br] Ensino Médio Completo
+
+        section.content__section.section#three
+          h2.section__title Extras 
+          h3.section__subtitle Estágios
+          p.section__paragraph #[a(href="http://mtistudio.com/", target="_blank") MTI Studio Ltda] De Outubro, 2015 até julho de 2016. #[br]Responsável por criação de pequenos jogos educativos interativos visando o ensino da lingua inglesa. 
+
+          p.section__paragraph #[a(href="http://www.parafernalia.net.br/", target="_blank") Parafernalia Interativa]. De Agosto, 2016 até junho de 2017. #[br]Primeira  contanto com tecnologias como  Webpack, Gulp, Grunt, Sass, Angular, Elm, Jade, Pug, Wordpress entre outras. Integrante da equipe que mantinha  e criava sites e aplicações como por exemplo: #[a(href="https://endlessos.com/pt-br/", target="_blank") Endless]
+
+          h3.section__subtitle Cursos
+          p.section__paragraph #[a(href="http://www.controlc.com.br/", target="_blank") Control C] Montagem e manuntenção de computadores , Pacote Office
+          p.section__paragraph #[a(href="https://www.unicarioca.edu.br/", target="_blank") Unicarioca]. Jogos Digitais - PRONATEC
+
+
+      footer.footer
+        p.footer__text Design by #[b Ronan S. S. Viana]
+        .footer__contact
+          h3.footer__title Entre em contato
+          p.footer__email ronanssviana@gmail.com
+          p.footer__email ronanviana@outlook.com
