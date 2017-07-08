@@ -38,10 +38,13 @@ a {
     color: #FFFFFF;
     margin-bottom: 4vh; }
   .header__avatar {
-    width: 250px;
+    width: 256px;
     border: 5px solid #E0DEDE;
     border-radius: 50%;
     margin-bottom: 4vh; }
+    @media screen and (max-width: 520px) {
+      .header__avatar {
+        width: 160px; } }
   .header__imgscroll {
     width: 40px; }
 
@@ -66,6 +69,9 @@ a {
     border-radius: 4px;
     padding: 4px 12px;
     cursor: pointer; }
+    @media screen and (max-width: 520px) {
+      .social__item {
+        margin: 0 4px; } }
   .social__link {
     font-family: "Roboto";
     color: #FFFFFF; }
@@ -130,6 +136,7 @@ a {
   background: #512DA8;
   padding: 20px;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center; }
   .footer__text, .footer__title, .footer__email {
@@ -141,7 +148,7 @@ a {
   .footer__email {
     font-size: 1.1em;
     margin-bottom: 5px; }
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 480px) {
     .footer {
       flex-direction: column;
       text-align: center; }
